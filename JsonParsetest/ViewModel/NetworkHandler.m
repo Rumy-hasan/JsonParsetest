@@ -11,7 +11,6 @@
 ///responsible to interect with networkService api
 @implementation NetworkHandler
 
-
 - (void)fetchData:(NSString *)withUrl at:(void (^)(NSMutableArray<Model *> * _Nullable, NSError * _Nullable))completion{
     NSURL *url = [NSURL URLWithString:withUrl];
     [[NetworkApi sharedNetworkApi:NSURLSession.sharedSession] loadData:url and:^(NSData * _Nullable jsonData, NSError * _Nullable err) {
