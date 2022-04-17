@@ -25,4 +25,4 @@ jobs:
           xcodebuild build-for-testing -scheme JsonParsetest -destination "platform=iOS Simulator,name=iPhone 12 Pro"
       - name: Test
         run: |
-          xcodebuild test-without-building -scheme JsonParsetest -destination "platform=iOS Simulator,name=iPhone 12 Pro"
+        xcodebuild test-without-building -scheme JsonParsetest -destination "platform=iOS Simulator,name=iPhone 12 Pro"
